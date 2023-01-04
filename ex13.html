@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        /* body{
+            background-color: rgb(62, 167, 69);
+        } */
+        .flex-container {
+            /* We first create a flex layout context */
+            display: flex;
+            
+            /* Then we define the flow direction 
+                and if we allow the items to wrap 
+            * Remember this is the same as:
+            * flex-direction: row;
+            * flex-wrap: wrap;
+            */
+            flex-flow: row wrap;
+            
+            /* Then we define how is distributed the remaining space */
+            justify-content: space-around;
+            
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            }
+            .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            
+            list-style: none;
+            margin: 0; 
+            background: deepskyblue;
+            }
+            .all{
+                display: flex;
+                flex-direction: row wrap;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .button{
+                height: 100px;
+                width: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* color: blue; */
+                background-color: blue;
+            }
+            .edit{
+                padding-left: 20px;
+                height: 100px;
+                width: 300px;
+                display: flex;
+
+                /* color: blue; */
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="col-xs-4">Column 1-a</div>
+                <div class="col-xs-8">Column 1-b</div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="col-xs-2">Column 2-a</div>
+                <div class="col-xs-10">Column 2-b</div>
+            </div>
+        </div>
+         <div class="all">   
+        <div class="button">кнопка
+        </div>
+        <div class="edit"> dffff</div></div>
+    </body>
+</html>
